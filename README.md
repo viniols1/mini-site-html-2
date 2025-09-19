@@ -23,7 +23,7 @@ JavaScript: Usado para controlar a navegação entre as "páginas" e adicionar i
 Para visualizar o projeto, basta abrir o arquivo index.html em qualquer navegador moderno. Não é necessário instalar dependências ou usar um servidor local.
 
 # 🛠️ Próximos Passos
-Este projeto pode ser expandido com as seguintes melhorias:
+## Este projeto pode ser expandido com as seguintes melhorias:
 
 Adicionar mais produtos e uma funcionalidade de carrinho de compras.
 
