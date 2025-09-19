@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Tecnologies</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 0.5s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 min-h-screen flex flex-col items-center p-4">
+
+    <nav class="w-full max-w-4xl bg-gray-800 p-4 rounded-xl shadow-lg flex justify-center space-x-4 mb-8">
+        <a href="#" class="nav-link px-4 py-2 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:bg-gray-700" data-page="home">Página Inicial</a>
+        <a href="#" class="nav-link px-4 py-2 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:bg-gray-700" data-page="products">Produtos</a>
+        <a href="#" class="nav-link px-4 py-2 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:bg-gray-700" data-page="support">Suporte</a>
+    </nav>
+
+    <main id="home" class="page-content w-full max-w-4xl bg-gray-800 p-8 rounded-xl shadow-lg animate-fade-in-down transition-opacity duration-500">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-100 mb-4">Bem-vindo à nossa Loja de Eletrônicos!</h1>
+            <p class="text-gray-400 text-lg mb-6">A Vinicius Tecnologies tem uma seleção de produtos de alta tecnologia.</p>
+            <button class="bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                Ver Produtos
+            </button>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-700 p-6 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-semibold text-gray-200 mb-2">Qualidade e Inovação</h2>
+                <p class="text-gray-400">Trabalhamos apenas com as melhores marcas para garantir a mais alta qualidade e as tecnologias mais recentes para você.</p>
+            </div>
+            <div class="bg-gray-700 p-6 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-semibold text-gray-200 mb-2">Suporte Dedicado</h2>
+                <p class="text-gray-400">Nossa equipe de suporte está sempre pronta para ajudá-lo com qualquer dúvida ou problema.</p>
+            </div>
+        </div>
+    </main>
+
+    <main id="products" class="page-content w-full max-w-4xl bg-gray-800 p-8 rounded-xl shadow-lg hidden transition-opacity duration-500">
+        <h1 class="text-4xl font-bold text-gray-100 text-center mb-8">Nossos Produtos</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300">
+                <img src="macbookair.jpg" alt="Notebook" class="rounded-lg mb-4 w-full h-auto">
+                <h2 class="text-xl font-semibold text-gray-100">MacBook Air</h2>
+                <p class="text-gray-400 mb-3">Poderoso e portátil. Ideal para trabalho e lazer.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-blue-400">R$12.999</span>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-full font-bold hover:bg-blue-700 transition-colors duration-300">Comprar</button>
+                </div>
+            </div>
+    
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300">
+                <img src="iphone17.jpg" alt="Smartphone Apple" class="rounded-lg mb-4 w-full h-auto">
+                <h2 class="text-xl font-semibold text-gray-100">Iphone 17</h2>
+                <p class="text-gray-400 mb-3">Câmera de alta resolução e bateria de longa duração.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-blue-400">R$7.999</span>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-full font-bold hover:bg-blue-700 transition-colors duration-300">Comprar</button>
+                </div>
+            </div>
+        
+            <div class="bg-gray-700 p-6 rounded-xl shadow-md transform hover:scale-105 transition-transform duration-300">
+                <img src="airpodsmax.jpg" alt="Fone de Ouvido" class="rounded-lg mb-4 w-full h-auto">
+                <h2 class="text-xl font-semibold text-gray-100">Fone de Ouvido Apple</h2>
+                <p class="text-gray-400 mb-3">Qualidade de som superior e design ergonômico.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-blue-400">R$6.590</span>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-full font-bold hover:bg-blue-700 transition-colors duration-300">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main id="support" class="page-content w-full max-w-4xl bg-gray-800 p-8 rounded-xl shadow-lg hidden transition-opacity duration-500">
+        <h1 class="text-4xl font-bold text-gray-100 text-center mb-8">Suporte ao Cliente</h1>
+        <p class="text-center text-gray-400 mb-6">Preencha o formulário abaixo e nossa equipe entrará em contato com você.</p>
+        <form class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-300 font-semibold mb-2">Nome Completo</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900 text-gray-200 placeholder-gray-400" placeholder="Seu nome">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-300 font-semibold mb-2">E-mail</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900 text-gray-200 placeholder-gray-400" placeholder="seuemail@exemplo.com">
+            </div>
+            <div>
+                <label for="subject" class="block text-gray-300 font-semibold mb-2">Assunto</label>
+                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900 text-gray-200 placeholder-gray-400" placeholder="Ex: Dúvida sobre pedido">
+            </div>
+            <div>
+                <label for="message" class="block text-gray-300 font-semibold mb-2">Mensagem</label>
+                <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-900 text-gray-200 placeholder-gray-400" placeholder="Descreva sua solicitação aqui..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                Enviar
+            </button>
+        </form>
+    </main>
+
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pages = document.querySelectorAll('.page-content');
+            
+            const showPage = (pageId) => {
+                pages.forEach(page => {
+                    page.classList.add('hidden');
+                    page.classList.remove('animate-fade-in-down');
+                });
+                document.getElementById(pageId).classList.remove('hidden');
+                document.getElementById(pageId).classList.add('animate-fade-in-down');
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('bg-blue-600', 'text-white');
+                    link.classList.add('bg-transparent', 'text-gray-300', 'hover:bg-gray-700');
+                    if (link.dataset.page === pageId) {
+                        link.classList.add('bg-blue-600', 'text-white');
+                        link.classList.remove('bg-transparent', 'text-gray-300', 'hover:bg-gray-700');
+                    }
+                });
+            };
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    showPage(link.dataset.page);
+                });
+            });
+
+            document.querySelector('.page-content button').addEventListener('click', () => {
+                showPage('products');
+            });
+
+            showPage('home');
+        });
+    </script>
+</body>
+</html>
